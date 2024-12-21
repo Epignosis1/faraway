@@ -11,7 +11,7 @@ export default function Footer({ itemName }) {
       ) : (
         <p>
           🧳 You have {itemCount} items on your list, and you already packed{" "}
-          {itemPacked}({percentage || 0}%)
+          {itemPacked}({percentage ? percentage : 0}%)
         </p>
       )}
     </div>
