@@ -142,8 +142,8 @@ button {
     flex-direction: column;
   }
 
-  input {
-    font-size: 16px;
+  form {
+    color: black;
   }
   .inputCom p {
     font-size: 14px;
