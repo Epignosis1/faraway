@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: rgb(139, 69, 19);
+}
+
+.footer {
+  background-color: aqua;
+}
+
+.logo {
+  background-color: #f4a226;
+  font-family: "Monoton";
+  font-size: 3rem;
+  padding: 20px 0;
+  word-spacing: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.inputCom {
+  background: orangered;
+}
+
+.footer,
+.logo,
+.inputcom,
+.item {
+  text-align: center;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.inputCom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputCom p {
+  font-size: 15px;
+}
+.inputBtn {
+  margin-left: 4px;
+}
+input,
+.input {
+  border-radius: 40px;
+  border: none;
+  padding: 6px;
+  margin-left: 5px;
+  background: rgba(255, 194, 115, 0.527);
+}
+
+.input {
+  width: 60px;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+.addItemBtn {
+  border-radius: 40px;
+  border: 1px solid gray;
+  background-color: aqua;
+  padding: 4px 10px;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 20px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 4.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sort {
+  margin-bottom: 20px;
+}
+
+.sortList,
+.claim {
+  background-color: rgb(252, 179, 85);
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid gray;
+  margin-right: 8px;
+}
+
+.dataItems {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dataItem {
+  color: rgb(252, 179, 85);
+  margin-left: 2px;
+}
+.test {
+  color: red;
+  cursor: pointer;
+  background: transparent;
+  margin-left: 2px;
+  font-weight: 900;
+  border: none;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .inputCom {
+    flex-direction: column;
+  }
+
+  .inputCom p {
+    font-size: 17px;
+  }
+  .inputBtn {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .listItem {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
